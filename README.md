@@ -10,9 +10,8 @@
 
 Customer Analysis:
 
-- Demographic Insights: Identify key demographics of customers (age, location, etc.) and their purchasing behavior.
+- Demographic Insights: Identify key demographics of customers (location) and their purchasing behavior.
 - Loyalty Program Impact: Evaluate the impact of the loyalty card program on sales and customer retention.
-- Customer Segmentation: Segment customers based on purchasing patterns, frequency, and average order value to tailor marketing strategies.
 
 Sales Performance:
 
@@ -62,7 +61,7 @@ LOYALTY CARD
 = XLOOKUP([@[Customer ID]], customers!$A$1:$A$1001, customers!$I$1:$I$1001,,0)
 ```
 
-I gathered the product data using INDEX() MATCH()
+**I gathered the product data using INDEX() MATCH()**
 
 COFFEE TYPE:
 ```
@@ -84,15 +83,20 @@ UNIT PRICE:
 =INDEX(products!$A$1:$G$49, MATCH(orders!$D2, products!$A$1:$A$49,0), MATCH(L$1, products!$A$1:$E$1, 0))
 ```
 
-Then I changed the name of Coffee Type Name:
+**Then I changed the name of Coffee Type Name to the full name type:**
 ```
 =IF(I2="Rob", "Robusta", IF(I2 = "Exc", "Excelsa", IF(I2="Ara", "Arabica", "Liberica")))
 ```
 
-and Roast Type Name:
+**and Roast Type Name:**
 ```
 =IF(J2 = "M", "Medium", IF(J2 = "L", "Light", "Dark"))
 ```
 
+**Next, I calculated sales which equals to unit price * quantity**
 
-```
+## 3. Data Analysis
+
+![image](https://github.com/linhnguyen2601/Excel-Projects/assets/166676829/6a12cb14-a4c0-4fb3-8718-0ce93dcb99b3)
+
+
