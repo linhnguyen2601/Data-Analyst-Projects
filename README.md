@@ -30,14 +30,59 @@ Product Performance:
 
 The Coffee Sales Performance dataset is structured into three interconnected tables: Customers, Products, and Orders.
 
-The Customers table includes detailed information about each customer, such as customer ID, customer name, geography, contact information, and whether the customer owns a loyalty card.
+- The Customers table includes detailed information about each customer, such as customer ID, customer name, demographics (location), contact information, and whether the customer owns a loyalty card.
 
-The Products table provides specifics about the coffee products offered, including product ID, coffee type (e.g., Arabica or Robusta), roast type, size, and price.
+- The Products table provides specifics about the coffee products offered, including product ID, coffee type (e.g., Arabica or Robusta), roast type, size, and unit price.
 
-The Orders table captures transactional data, detailing order ID, customer ID, product ID, order date, quantity, and total sales amount.
+- The Orders table captures transactional data, detailing order ID, order date, customer ID, product ID and quantity.
 
 This comprehensive dataset enables in-depth analysis of sales trends, customer behavior, and product performance, offering valuable insights to drive strategic business decisions and optimize sales outcomes.
 
-## 2. Dashboard
+## 2. Data processing
+
+I gathered the customer data using XLOOKUP:
+
+CUSTOMER NAME:
+```
+XLOOKUP($C$2, customers!$A$1:$A$1001, customers!$B$1:$B$1001,,0)
+```
+
+EMAIL:
+```
+IF(XLOOKUP(C2, customers!$A$1:$A$1001, customers!$C$1:$C$1001,,0)=0, "", XLOOKUP(C2, customers!$A$1:$A$1001, customers!$C$1:$C$1001,,0))
+```
+
+COUNTRY:
+```
+=XLOOKUP(C2, customers!$A$1:$A$1001, customers!$G$1:$G$1001,,0)
+```
+
+LOYALTY CARD
+```
+XLOOKUP([@[Customer ID]], customers!$A$1:$A$1001, customers!$I$1:$I$1001,,0)
+```
+
+COFFEE TYPE:
+```
+=INDEX(products!$A$1:$G$49, MATCH(orders!$D2, products!$A$1:$A$49,0), MATCH(I$1, products!$A$1:$E$1, 0))
+```
+
+ROAST TYPE:
+```
+=INDEX(products!$A$1:$G$49, MATCH(orders!$D2, products!$A$1:$A$49,0), MATCH(J$1, products!$A$1:$E$1, 0))
+```
+
+```
 
 
+
+
+
+
+```
+
+
+```
+
+
+```
