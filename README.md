@@ -40,16 +40,16 @@ This comprehensive dataset enables in-depth analysis of sales trends, customer b
 
 ## 2. Data processing
 
-I gathered the customer data using XLOOKUP:
+**I gathered the customer data using XLOOKUP:**
 
 CUSTOMER NAME:
 ```
-XLOOKUP($C$2, customers!$A$1:$A$1001, customers!$B$1:$B$1001,,0)
+= XLOOKUP($C$2, customers!$A$1:$A$1001, customers!$B$1:$B$1001,,0)
 ```
 
 EMAIL:
 ```
-IF(XLOOKUP(C2, customers!$A$1:$A$1001, customers!$C$1:$C$1001,,0)=0, "", XLOOKUP(C2, customers!$A$1:$A$1001, customers!$C$1:$C$1001,,0))
+= IF(XLOOKUP(C2, customers!$A$1:$A$1001, customers!$C$1:$C$1001,,0)=0, "", XLOOKUP(C2, customers!$A$1:$A$1001, customers!$C$1:$C$1001,,0))
 ```
 
 COUNTRY:
@@ -59,8 +59,10 @@ COUNTRY:
 
 LOYALTY CARD
 ```
-XLOOKUP([@[Customer ID]], customers!$A$1:$A$1001, customers!$I$1:$I$1001,,0)
+= XLOOKUP([@[Customer ID]], customers!$A$1:$A$1001, customers!$I$1:$I$1001,,0)
 ```
+
+I gathered the product data using INDEX() MATCH()
 
 COFFEE TYPE:
 ```
@@ -72,16 +74,24 @@ ROAST TYPE:
 =INDEX(products!$A$1:$G$49, MATCH(orders!$D2, products!$A$1:$A$49,0), MATCH(J$1, products!$A$1:$E$1, 0))
 ```
 
+SIZE
+```
+=INDEX(products!$A$1:$G$49, MATCH(orders!$D2, products!$A$1:$A$49,0), MATCH(K$1, products!$A$1:$E$1, 0))
 ```
 
-
-
-
-
-
+UNIT PRICE:
+```
+=INDEX(products!$A$1:$G$49, MATCH(orders!$D2, products!$A$1:$A$49,0), MATCH(L$1, products!$A$1:$E$1, 0))
 ```
 
+Then I changed the name of Coffee Type Name:
+```
+=IF(I2="Rob", "Robusta", IF(I2 = "Exc", "Excelsa", IF(I2="Ara", "Arabica", "Liberica")))
+```
 
+and Roast Type Name:
+```
+=IF(J2 = "M", "Medium", IF(J2 = "L", "Light", "Dark"))
 ```
 
 
