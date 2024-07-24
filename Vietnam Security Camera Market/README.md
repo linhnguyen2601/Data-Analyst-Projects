@@ -56,23 +56,23 @@ Link tham khảo: https://projectshipping.vn/nhap-khau-camera-thiet-bi-giam-sat-
 - Mục đích sử dung:
   Filter các mục đích sử dụng sau:
 
-| STT | Loại | Miêu tả | Loại |
+| STT | Loại | Miêu tả | Loại khỏi dataset|
 | --- | --- |  --- |   --- |  
 | 1 | Chuyển tiêu thụ nội địa khác |Chủ yếu là Bộ phận chụp hình của ĐTDĐ và Camera truyền hình| Có |
-| 2 | Hàng gửi kho ngoại quan |Không|
-| 3 | Hàng nhập khẩu khác |Không|
-| 4 | Nhập hàng xuất khẩu bị trả lại |Có|
-| 5 | Nhập kinh doanh của doanh nghiệp đầu tư |Không|
-| 6 | Nhập kinh doanh sản xuất |Không|
-| 7 | Nhập kinh doanh tiêu dùng |Không|
-| 8 | Nhập linh kiện ô tô tham gia Chương trình ưu đãi thuế NK |Có|
-| 9 | Nhập nguyên liệu của doanh nghiệp chế xuất từ nước ngoài |Có|
-| 10 | Nhập nguyên liệu của doanh nghiệp chế xuất từ nội địa |Có|
-| 11 | Nhập nguyên liệu sản xuất xuất khẩu |Có|
-| 12 | Nhập nguyên liệu để gia công cho thương nhân nước ngoài |Có|
-| 13 | Nhập tạo tài sản cố định của doanh nghiệp chế xuất |Không|
-| 14 | Tái nhập hàng đã tạm xuất |Có|
-| 15 | Tạm nhập máy móc, thiết bị phục vụ thực hiện các dự án có thời hạn |Có|
+| 2 | Hàng gửi kho ngoại quan ||Không|
+| 3 | Hàng nhập khẩu khác ||Không|
+| 4 | Nhập hàng xuất khẩu bị trả lại ||Có|
+| 5 | Nhập kinh doanh của doanh nghiệp đầu tư ||Không|
+| 6 | Nhập kinh doanh sản xuất ||Không|
+| 7 | Nhập kinh doanh tiêu dùng ||Không|
+| 8 | Nhập linh kiện ô tô tham gia Chương trình ưu đãi thuế NK ||Có|
+| 9 | Nhập nguyên liệu của doanh nghiệp chế xuất từ nước ngoài ||Có|
+| 10 | Nhập nguyên liệu của doanh nghiệp chế xuất từ nội địa ||Có|
+| 11 | Nhập nguyên liệu sản xuất xuất khẩu ||Có|
+| 12 | Nhập nguyên liệu để gia công cho thương nhân nước ngoài ||Có|
+| 13 | Nhập tạo tài sản cố định của doanh nghiệp chế xuất ||Không|
+| 14 | Tái nhập hàng đã tạm xuất ||Có|
+| 15 | Tạm nhập máy móc, thiết bị phục vụ thực hiện các dự án có thời hạn ||Có|
 
 
 - Tên hàng:
