@@ -45,11 +45,16 @@ Tên cty xuất khẩu
 
 - Mã hàng: Bỏ chọn các mã 85258031 & 85258051
 
-85258031: Mã HS camera ghi hình ảnh cho phát thanh
-85258039: Mã HS camera ghi hình ảnh loại khác
-85258040	Mã HS camera truyền hình
-85258051	Mã HS camera kỹ thuật số DSLR
-85258059	Mã HS camera kỹ thuật số loại khác
+	85258031: Mã HS camera ghi hình ảnh cho phát thanh
+
+	85258039: Mã HS camera ghi hình ảnh loại khác
+
+	85258040: Mã HS camera truyền hình
+
+	85258051: Mã HS camera kỹ thuật số DSLR
+
+	85258059: Mã HS camera kỹ thuật số loại khác\
+
 
 Link tham khảo: https://projectshipping.vn/nhap-khau-camera-thiet-bi-giam-sat-an-ninh/
 
