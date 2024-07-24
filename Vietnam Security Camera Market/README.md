@@ -79,8 +79,16 @@ Link tham khảo: https://projectshipping.vn/nhap-khau-camera-thiet-bi-giam-sat-
 | 14 | Tái nhập hàng đã tạm xuất ||Có|
 | 15 | Tạm nhập máy móc, thiết bị phục vụ thực hiện các dự án có thời hạn ||Có|
 
+- Đơn vị tính:
+![image](https://github.com/user-attachments/assets/9c97723c-b233-44fc-8887-d079c9efd13a)
+
+- Công ty nhập khẩu:
+
+Loại bỏ cá nhân và các văn phòng đại diện
 
 - Tên hàng:
+  DUPLICATE COLUMN & TRANSFORM COLUMN
+  
 Filter các hàng hóa có từ khóa: ô tô, điện thoại di động, máy tính bảng, máy tính, lenovo, ĐTDĐ, robot, máy ảnh, máy chụp hình, máy quay phim, xe hơi,
 xe máy, otoo, máy ảnh
 
