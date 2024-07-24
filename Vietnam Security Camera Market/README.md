@@ -101,3 +101,15 @@ xe máy, ôtô, máy ảnh,
 
 Loại bỏ các đơn giá trung bình < $2
 
+Dataset ban đầu:
+
+|Số dòng| Tổng số lượng |
+|---|---|
+|16088| 59105770|
+
+Dataset sau khi thực hiện lọc:
+
+|Số dòng| Tổng số lượng |
+|---|---|
+| 3999 | 1817084|
+
