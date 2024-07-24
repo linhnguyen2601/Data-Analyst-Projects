@@ -87,11 +87,17 @@ Link tham khảo: https://projectshipping.vn/nhap-khau-camera-thiet-bi-giam-sat-
   
 ![image](https://github.com/user-attachments/assets/9c97723c-b233-44fc-8887-d079c9efd13a)
 
+- Lượng:
 
+Loại bỏ các đơn hàng có lượng nhập khẩu < 10
 
 - Tên hàng:
   DUPLICATE COLUMN & TRANSFORM COLUMN
   
 Filter các hàng hóa có từ khóa: ô tô, điện thoại di động, máy tính bảng, máy tính, lenovo, ĐTDĐ, robot, máy ảnh, máy chụp hình, máy quay phim, xe hơi,
-xe máy, otoo, máy ảnh
+xe máy, ôtô, máy ảnh, 
+
+- Tạo cột đơn giá trung bình để loại bỏ các đơn hàng có đơn giá quá thấp => dễ nhầm lẫn sang các loại linh kiện:
+
+Loại bỏ các đơn giá trung bình < $2
 
