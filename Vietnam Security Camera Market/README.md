@@ -1,4 +1,4 @@
-# Vietnam Surveilance and Security Market 2020 Analysis | Excel & Power Query
+# Vietnam Surveilance and Security Market 2020 Analysis | Excel & Power Query & Pivot Table
 
 ![image](https://github.com/user-attachments/assets/cd72fc0c-dd95-40a6-9774-3cb15272f146)
 
@@ -105,11 +105,14 @@ Dataset ban đầu:
 
 |Số dòng| Tổng số lượng |
 |---|---|
-|16088| 59105770|
+|16,088| 59,105,770|
 
 Dataset sau khi thực hiện lọc:
 
 |Số dòng| Tổng số lượng |
 |---|---|
-| 3999 | 1817084|
+| 3,999 | 1,817,084|
 
+## 2. Data analysis
+
+### 2.1 
