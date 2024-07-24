@@ -43,6 +43,10 @@ Thực hiện lọc trên các cột:
 | --- | --- | --- | --- | --- |--- |  --- | --- | --- |   --- |   --- |   --- | --- | --- | 
 | | | x| x| x| x| x | |||||x||
 
+- Công ty nhập khẩu:
+
+Loại bỏ cá nhân và các văn phòng đại diện
+
 - Mã hàng: Bỏ chọn các mã 85258031 & 85258051
 
 	85258031: Mã HS camera ghi hình ảnh cho phát thanh
@@ -80,11 +84,10 @@ Link tham khảo: https://projectshipping.vn/nhap-khau-camera-thiet-bi-giam-sat-
 | 15 | Tạm nhập máy móc, thiết bị phục vụ thực hiện các dự án có thời hạn ||Có|
 
 - Đơn vị tính:
+  
 ![image](https://github.com/user-attachments/assets/9c97723c-b233-44fc-8887-d079c9efd13a)
 
-- Công ty nhập khẩu:
 
-Loại bỏ cá nhân và các văn phòng đại diện
 
 - Tên hàng:
   DUPLICATE COLUMN & TRANSFORM COLUMN
