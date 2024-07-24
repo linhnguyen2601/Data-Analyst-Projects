@@ -40,8 +40,8 @@ Tên cty xuất khẩu
 Thực hiện lọc trên các cột:
 
 | Ngay | Ma Cty NX | Cong ty NK | Ma hang| Ten hang| DVT | Luong | Tri gia(USD)| Thi truong xuat khau| Cua khau| DKGD | Ma PTTT | Muc dich su dung| Ten cong ty XK|
-| --- | --- | --- | --- | --- |--- |  --- | --- | --- |   --- |   --- |   --- | --- | --- | --- |  
-| | | x| x| x| x| x | |||||x|
+| --- | --- | --- | --- | --- |--- |  --- | --- | --- |   --- |   --- |   --- | --- | --- | 
+| | | x| x| x| x| x | |||||x||
 
 - Mã hàng: Bỏ chọn các mã 85258031 & 85258051
 
