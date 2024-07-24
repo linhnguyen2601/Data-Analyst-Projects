@@ -18,13 +18,7 @@ Các cột:
 
 Ngày
 Mã Cty NK
-Mã hang => cần phải lọc: 
-85258031: 
-85258039
-85258040
-85258051	
-85258059
-	
+Mã hang 	
 Tên hang
 DVT
 Lượng
@@ -42,6 +36,12 @@ Tên cty xuất khẩu
 ### 2.1 Check null, dupplicate
 
 ### 2.2 Filtering
+
+Thực hiện lọc trên các cột:
+
+| Ngay | Ma Cty NX | Cong ty NK | Ma hang| Ten hang| DVT | Luong | Tri gia(USD)| Thi truong xuat khau| Cua khau| DKGD | Ma PTTT | Muc dich su dung| Ten cong ty XK|
+| --- | --- | --- | --- | --- |--- |  --- | --- | --- |   --- |   --- |   --- | --- | --- | --- |  
+| | | x| x| x| x| x | |||||x|
 
 - Mã hàng: Bỏ chọn các mã 85258031 & 85258051
 
