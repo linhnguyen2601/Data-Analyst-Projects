@@ -6,7 +6,18 @@
 
 ### 1.1 Business Requirement
 
-Tập trung vào camera an ninh, camera giám sát, camera IP, 
+Mục tiêu của việc phân tích dataset này là phân tích dữ liệu nhập khẩu để cung cấp thông tin chi tiết hỗ trợ phòng kinh doanh trong việc nghiên cứu thị trường camera an ninh, camera giám sát tại Việt Nam cũng như xây dựng chiến lược giá cho dòng sản phẩm đang chuẩn bị tung ra thị trường của công ty. 
+
+Đầu ra báo cáo cần làm rõ:
+
+- Tổng số lượng camera nhập khẩu chính ngạch (qua hải quan) tại Việt Nam trong 6 tháng đầu năm 2020 là bao nhiêu?
+- Xác định xu hướng nhập khẩu theo thời gian.
+- Những hãng nào đang xuất khẩu vào Việt Nam với số lượng lớn nhất, là bao nhiêu, giá trị như thế nào?
+- Nguồn gốc xuất xứ những hãng đó từ nước nào?
+- Những hãng đó đang xuất khẩu vào Việt Nam thông qua công ty xuất khẩu nào (Chính hãng phân phối tại Việt Nam hay thông qua đại lý?)
+- Các đại lý nhập khẩu camera có xu hướng nhập khẩu như thế nào?
+
+Dataset bao gồm các trường thông tin: ngày, công ty nhập khẩu, mã hàng, tên hàng, số lượng, đơn vị tính, giá trị, mục đích sử dụng, và công ty xuất khẩu.
 
 ### 1.2 Dataset introduction
 
@@ -93,10 +104,15 @@ Link tham khảo: https://projectshipping.vn/nhap-khau-camera-thiet-bi-giam-sat-
 Loại bỏ các đơn hàng có lượng nhập khẩu < 10
 
 - Tên hàng:
-  DUPLICATE COLUMN & TRANSFORM COLUMN
+
+```
+= Table.TransformColumns(#"Filtered Muc dich su dung",{{"Ten hang", Text.Lower, type text}})
+```
   
-Filter các hàng hóa có từ khóa: ô tô, điện thoại di động, máy tính bảng, máy tính, lenovo, ĐTDĐ, robot, máy ảnh, máy chụp hình, máy quay phim, xe hơi,
-xe máy, ôtô, máy ảnh, 
+Filter các hàng hóa có từ khóa: ô tô, ôtô, điện thoại di động, đtdđ, camera lùi, máy tính, robot, máy ảnh, máy chụp hình, máy quay phim, xe hơi,
+xe máy,cụm camera, hành trình, máy quay, hội nghị, camera sau, phụ tùng, mã vạch, tuần tra, lùi, linh kiện, kiểm tra sản phẩm, lắp trong xe, lùi, kính hiển vi.
+
+![image](https://github.com/user-attachments/assets/5e7b00e2-c158-4905-ab79-9aa603cecc23)
 
 - Tạo cột đơn giá trung bình để loại bỏ các đơn hàng có đơn giá quá thấp => dễ nhầm lẫn sang các loại linh kiện:
 
@@ -116,13 +132,20 @@ Dataset sau khi thực hiện lọc:
 
 ## 2. Data analysis
 
-### 2.1 Phân bổ theo số lượng theo các quốc gia xuất khẩu camera vào Việt Nam
+### 2.1 Data overview
 
+Trong 6 tháng đầu năm 2020 có khoảng gần 2 triệu camera an ninh, camera giám sát 
+Phân bổ theo số lượng theo các quốc gia xuất khẩu camera vào Việt Nam
+
+Trong tổng số gần 2 triệu camera được nhập khẩu vào Việt Nam trong 6 tháng đầu năm 2020, 
 
 ### 2.2 Phân bổ theo số lượng theo các hãng camera được xuất khẩu vào Việt Nam
 
 Phân tích theo camera Brand
 - Add conditional column: lọc theo tên hãng và tên công ty
+
+<img width="683" alt="image" src="https://github.com/user-attachments/assets/9dbed37e-549b-4164-afde-84ffb4d125f8">
+
 
 |Số dòng| Tổng số lượng |% trên tổng dataset|
 |---|---|---|
