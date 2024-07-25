@@ -35,6 +35,7 @@ Tên cty xuất khẩu
 
 ### 2.1 Check null, dupplicate
 
+
 ### 2.2 Filtering
 
 Thực hiện lọc trên các cột:
@@ -111,8 +112,21 @@ Dataset sau khi thực hiện lọc:
 
 |Số dòng| Tổng số lượng |
 |---|---|
-| 3,999 | 1,817,084|
+| 4,597 | 1,930,877|
 
 ## 2. Data analysis
 
-### 2.1 
+### 2.1 Phân bổ theo số lượng theo các quốc gia xuất khẩu camera vào Việt Nam
+
+
+### 2.2 Phân bổ theo số lượng theo các hãng camera được xuất khẩu vào Việt Nam
+
+Phân tích theo camera Brand
+- Add conditional column: lọc theo tên hãng và tên công ty
+
+|Số dòng| Tổng số lượng |% trên tổng dataset|
+|---|---|---|
+|Số dòng có thể nhận diện được tên hãng camera| 4,010 |87.23%|
+|Số lượng| 1,890,638|97.91%|
+
+
