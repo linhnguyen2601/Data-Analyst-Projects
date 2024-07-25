@@ -55,9 +55,11 @@ Thực hiện lọc trên các cột:
 | --- | --- | --- | --- | --- |--- |  --- | --- | --- |   --- |   --- |   --- | --- | --- | 
 | | | x| x| x| x| x | |||||x||
 
+
 - Công ty nhập khẩu:
 
 Loại bỏ cá nhân và các văn phòng đại diện
+
 
 - Mã hàng: Bỏ chọn các mã 85258031 & 85258051
 
@@ -73,6 +75,7 @@ Loại bỏ cá nhân và các văn phòng đại diện
 
 
 Link tham khảo: https://projectshipping.vn/nhap-khau-camera-thiet-bi-giam-sat-an-ninh/
+
 
 - Mục đích sử dung:
   Filter các mục đích sử dụng sau:
@@ -95,13 +98,16 @@ Link tham khảo: https://projectshipping.vn/nhap-khau-camera-thiet-bi-giam-sat-
 | 14 | Tái nhập hàng đã tạm xuất ||Có|
 | 15 | Tạm nhập máy móc, thiết bị phục vụ thực hiện các dự án có thời hạn ||Có|
 
+
 - Đơn vị tính:
   
 ![image](https://github.com/user-attachments/assets/9c97723c-b233-44fc-8887-d079c9efd13a)
 
+
 - Lượng:
 
 Loại bỏ các đơn hàng có lượng nhập khẩu < 10
+
 
 - Tên hàng:
 
@@ -114,9 +120,11 @@ xe máy,cụm camera, hành trình, máy quay, hội nghị, camera sau, phụ t
 
 ![image](https://github.com/user-attachments/assets/5e7b00e2-c158-4905-ab79-9aa603cecc23)
 
+
 - Tạo cột đơn giá trung bình để loại bỏ các đơn hàng có đơn giá quá thấp => dễ nhầm lẫn sang các loại linh kiện:
 
 Loại bỏ các đơn giá trung bình < $2
+
 
 Dataset ban đầu:
 
@@ -124,7 +132,7 @@ Dataset ban đầu:
 |---|---|
 |16,088| 59,105,770|
 
-Dataset sau khi thực hiện lọc:
+Dataset sau khi thực hiện lọc các giá trị không phù hợp:
 
 |Số dòng| Tổng số lượng |
 |---|---|
@@ -134,14 +142,16 @@ Dataset sau khi thực hiện lọc:
 
 ### 2.1 Data overview
 
-Trong 6 tháng đầu năm 2020 có khoảng gần 2 triệu camera an ninh, camera giám sát 
+Trong 6 tháng đầu năm 2020 có khoảng gần 2 triệu camera an ninh, camera giám sát được nhập khẩu vào Việt Nam thông qua... công ty nhập khẩu.
+
+
 Phân bổ theo số lượng theo các quốc gia xuất khẩu camera vào Việt Nam
 
 Trong tổng số gần 2 triệu camera được nhập khẩu vào Việt Nam trong 6 tháng đầu năm 2020, 
 
 ### 2.2 Phân bổ theo số lượng theo các hãng camera được xuất khẩu vào Việt Nam
 
-Phân tích theo camera Brand
+Để phân tích theo hãng camera: 
 - Add conditional column: lọc theo tên hãng và tên công ty
 
 <img width="683" alt="image" src="https://github.com/user-attachments/assets/9dbed37e-549b-4164-afde-84ffb4d125f8">
@@ -153,3 +163,4 @@ Phân tích theo camera Brand
 |Số lượng| 1,890,638|97.91%|
 
 
+_Note: do số liệu này là số liệu không được public nên những báo cáo ở trên đây chỉ có thể cung cấp số liệu chung chung dạng % và không cung cấp số liệu chính xác_
