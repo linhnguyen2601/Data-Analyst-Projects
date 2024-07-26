@@ -6,7 +6,19 @@
 
 ### 1.1 Business Requirement
 
-Mục tiêu của việc phân tích dataset này là phân tích dữ liệu nhập khẩu để cung cấp thông tin chi tiết hỗ trợ phòng kinh doanh trong việc nghiên cứu thị trường camera an ninh, camera giám sát tại Việt Nam cũng như xây dựng chiến lược giá cho dòng sản phẩm đang chuẩn bị tung ra thị trường của công ty. 
+The goal of analyzing this dataset is to examine import data to provide detailed insights that support the sales department in researching the security camera market in Vietnam, as well as developing a pricing strategy for the company's upcoming product launch.
+
+Report Outputs:
+Total Number of Cameras Imported: Determine the total number of officially imported (through customs) cameras in Vietnam during the first six months of 2020.
+Import Trends: Identify import trends over time.
+Major Exporting Brands: Identify which brands are exporting the largest quantities to Vietnam, the quantities involved, and their values.
+Country of Origin: Determine the countries of origin for these brands.
+Export Channels: Identify through which companies these brands are exporting to Vietnam (direct distribution or through agents).
+Import Trends of Dealers: Analyze the import trends of camera dealers.
+Dataset Fields:
+The dataset includes the following fields: date, importing company, item code, item name, quantity, unit of measure, value, purpose of use, and exporting company.
+
+_Mục tiêu của việc phân tích dataset này là phân tích dữ liệu nhập khẩu để cung cấp thông tin chi tiết hỗ trợ phòng kinh doanh trong việc nghiên cứu thị trường camera an ninh, camera giám sát tại Việt Nam cũng như xây dựng chiến lược giá cho dòng sản phẩm đang chuẩn bị tung ra thị trường của công ty. 
 
 Đầu ra báo cáo cần làm rõ:
 
@@ -18,7 +30,7 @@ Mục tiêu của việc phân tích dataset này là phân tích dữ liệu nh
 - Các đại lý nhập khẩu camera có xu hướng nhập khẩu như thế nào?
 
 Dataset bao gồm các trường thông tin: ngày, công ty nhập khẩu, mã hàng, tên hàng, số lượng, đơn vị tính, giá trị, mục đích sử dụng, và công ty xuất khẩu.
-
+_
 ### 1.2 Dataset introduction
 
 The dataset shows import data of security market in the first half of 2020.
@@ -42,14 +54,23 @@ Mã PTTT
 Mục đích sử dụng
 Tên cty xuất khẩu
 
+Các bước làm:
+Check null, duplicates
+Loại các giá trị để ra được dataset chỉ bao gồm các sản phẩm security camera bằng việc lọc theo tên hàng, mã hàng hóa nhập khẩu, mục đích sản phẩm.
+Đơn vị tính 
+Lượng?
+Công ty nhập khẩu: bỏ cá nhân và VP đại diện.
+
 ## 2. Data cleaning
 
-### 2.1 Check null, dupplicate
+### 2.1 Check null, duplicate
 
 
 ### 2.2 Filtering
 
-Thực hiện lọc trên các cột:
+Apply Filters on the Following Columns:
+
+_Thực hiện lọc trên các cột:_
 
 | Ngay | Ma Cty NX | Cong ty NK | Ma hang| Ten hang| DVT | Luong | Tri gia(USD)| Thi truong xuat khau| Cua khau| DKGD | Ma PTTT | Muc dich su dung| Ten cong ty XK|
 | --- | --- | --- | --- | --- |--- |  --- | --- | --- |   --- |   --- |   --- | --- | --- | 
@@ -115,7 +136,7 @@ Loại bỏ các đơn hàng có lượng nhập khẩu < 10
 = Table.TransformColumns(#"Filtered Muc dich su dung",{{"Ten hang", Text.Lower, type text}})
 ```
   
-Filter các hàng hóa có từ khóa: ô tô, ôtô, điện thoại di động, đtdđ, camera lùi, máy tính, robot, máy ảnh, máy chụp hình, máy quay phim, xe hơi,
+Filter out các hàng hóa có từ khóa: ô tô, ôtô, điện thoại di động, đtdđ, camera lùi, máy tính, robot, máy ảnh, máy chụp hình, máy quay phim, xe hơi,
 xe máy,cụm camera, hành trình, máy quay, hội nghị, camera sau, phụ tùng, mã vạch, tuần tra, lùi, linh kiện, kiểm tra sản phẩm, lắp trong xe, lùi, kính hiển vi.
 
 ![image](https://github.com/user-attachments/assets/5e7b00e2-c158-4905-ab79-9aa603cecc23)
@@ -136,7 +157,7 @@ Dataset sau khi thực hiện lọc các giá trị không phù hợp:
 
 |Số dòng| Tổng số lượng |
 |---|---|
-| 4,597 | 1,930,877|
+| 4,561 | 1,929,600|
 
 ## 2. Data analysis
 
@@ -151,6 +172,8 @@ Trong tổng số gần 2 triệu camera được nhập khẩu vào Việt Nam 
 
 ### 2.2 Phân bổ theo số lượng theo các hãng camera được xuất khẩu vào Việt Nam
 
+The market, valued at roughly US$175 million in 2023, is dominated by Chinese giants Dahua and Hikvision who hold a staggering 90 per cent market share.
+
 Để phân tích theo hãng camera: 
 - Add conditional column: lọc theo tên hãng và tên công ty
 
@@ -159,8 +182,8 @@ Trong tổng số gần 2 triệu camera được nhập khẩu vào Việt Nam 
 
 |Số dòng| Tổng số lượng |% trên tổng dataset|
 |---|---|---|
-|Số dòng có thể nhận diện được tên hãng camera| 4,010 |87.23%|
-|Số lượng| 1,890,638|97.91%|
+|Số dòng có thể nhận diện được tên hãng camera| 4,013 |87.99%|
+|Số lượng| 1,891,024|98.00%|
 
 
 _Note: do số liệu này là số liệu không được public nên những báo cáo ở trên đây chỉ có thể cung cấp số liệu chung chung dạng % và không cung cấp số liệu chính xác_
