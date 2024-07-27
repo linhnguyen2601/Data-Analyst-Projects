@@ -160,24 +160,27 @@ Dataset sau khi thực hiện lọc các giá trị không phù hợp so với d
 
 Dataset ban đầu:
 
-|Số dòng| Tổng số lượng | |Số dòng| Tổng số lượng || % số dòng| % số lượng
-|---|---||---|---||---|---|
-|16,088| 59,105,770|| 4,561 | 1,929,600|| 28.35%|3.26%
+||Số dòng| Tổng số lượng |
+|---|---|---|
+|Dataset ban đầu|16,088| 59,105,770|
+|Dataset sau khi lọc| 4,561 | 1,929,600|
+|%| 28.35%|3.26%|
 
 ## 2. Data analysis
 
 ### 2.1 Data overview
 
-Trong 6 tháng đầu năm 2020 có khoảng gần 2 triệu camera an ninh, camera giám sát được nhập khẩu vào Việt Nam thông qua... công ty nhập khẩu.
+Nearly 2 million security and surveillance cameras were imported into Vietnam. These imports were facilitated by over 400 manufacturing and trading companies.The total import value exceeded 50 million USD.
 
+China: Dominated the market with over 96% of the import quantity and more than 74% of the import value.
+Singapore: Contributed 1% of the import quantity and 10% of the import value.
+South Korea: Accounted for 0.37% of the import quantity and 1% of the import value.
 
-Phân bổ theo số lượng theo các quốc gia xuất khẩu camera vào Việt Nam
+Trong 6 tháng đầu năm 2020 có khoảng gần 2 triệu camera an ninh, camera giám sát được nhập khẩu vào Việt Nam thông qua hơn 400 công ty sản xuất và thương mại. Tổng giá trị nhập khẩu là hơn 50 triệu USD.
 
-Trong tổng số gần 2 triệu camera được nhập khẩu vào Việt Nam trong 6 tháng đầu năm 2020, 
+Trong đó, Trung Quốc là quốc gia xuất khẩu lớn nhất vào Việt Nam, chiếm gần như tuyệt đối thị trường với hơn 96% lượng xuất khẩu và hơn 74% về giá trị. Theo sau là Singapore (1% về lượng và 10% về giá trị) và Hàn Quốc (0.37% về lượng và 1& về giá trị)
 
 ### 2.2 Phân bổ theo số lượng theo các hãng camera được xuất khẩu vào Việt Nam
-
-The market, valued at roughly US$175 million in 2023, is dominated by Chinese giants Dahua and Hikvision who hold a staggering 90 per cent market share.
 
 Để phân tích theo hãng camera: 
 - Add conditional column: lọc theo tên hãng và tên công ty
@@ -190,5 +193,5 @@ The market, valued at roughly US$175 million in 2023, is dominated by Chinese gi
 |Số dòng có thể nhận diện được tên hãng camera| 4,013 |87.99%|
 |Số lượng| 1,891,024|98.00%|
 
+The market, valued at roughly US$175 million in 2023, is dominated by Chinese giants Dahua and Hikvision who hold a staggering 90 per cent market share. the two largest Chinese brands are Dahua, HikVision, and their subsidiaries, accounting for nearly 90% of the market share; The rest are mainly small Chinese names.
 
-_Note: do số liệu này là số liệu không được public nên những báo cáo ở trên đây chỉ có thể cung cấp số liệu chung chung dạng % và không cung cấp số liệu chính xác_
