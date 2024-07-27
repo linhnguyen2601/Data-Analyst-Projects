@@ -92,7 +92,7 @@ Loại bỏ các cá nhân- tổ chức không có mã số thuế và các văn
  Table.SelectRows(#"Removed Duplicates", each ([Cong ty Nhap khau] <> "Tổng Lãnh Sự Quán xxx" and [Cong ty Nhap khau] <> "VPĐD D-Link xxx" and [Cong ty Nhap khau] <> "Văn phòng đại diện xxx" and [Cong ty Nhap khau] <> "Văn phòng đại diện xxxx" and [Cong ty Nhap khau] <> "Văn phòng đại diện xxx"))
 ```
 
-- Mã hàng: Bỏ chọn các mã 85258031 & 85258051
+- Mã hàng: Filter out HS Code 85258031 & 85258051. Bỏ chọn các mã 85258031 & 85258051
 
 	85258031: Mã HS camera ghi hình ảnh cho phát thanh
 
@@ -109,36 +109,35 @@ Link tham khảo: https://projectshipping.vn/nhap-khau-camera-thiet-bi-giam-sat-
 
 
 - Mục đích sử dung:
-  Filter các mục đích sử dụng sau:
+
+  Filter out the following purpose of use/ Filter các mục đích sử dụng sau:
 
 | STT | Loại | Miêu tả | Loại khỏi dataset|
 | --- | --- |  --- |   --- |  
 | 1 | Chuyển tiêu thụ nội địa khác |Chủ yếu là Bộ phận chụp hình của ĐTDĐ và Camera truyền hình| Có |
 | 2 | Hàng gửi kho ngoại quan ||Không|
 | 3 | Hàng nhập khẩu khác ||Không|
-| 4 | Nhập hàng xuất khẩu bị trả lại ||Có|
+| 4 | Nhập hàng xuất khẩu bị trả lại | Không xét đến các hàng xuất khẩu bị trả lại|Có|
 | 5 | Nhập kinh doanh của doanh nghiệp đầu tư ||Không|
 | 6 | Nhập kinh doanh sản xuất ||Không|
 | 7 | Nhập kinh doanh tiêu dùng ||Không|
-| 8 | Nhập linh kiện ô tô tham gia Chương trình ưu đãi thuế NK ||Có|
-| 9 | Nhập nguyên liệu của doanh nghiệp chế xuất từ nước ngoài ||Có|
-| 10 | Nhập nguyên liệu của doanh nghiệp chế xuất từ nội địa ||Có|
-| 11 | Nhập nguyên liệu sản xuất xuất khẩu ||Có|
-| 12 | Nhập nguyên liệu để gia công cho thương nhân nước ngoài ||Có|
+| 8 | Nhập linh kiện ô tô tham gia Chương trình ưu đãi thuế NK |Đối tượng đang xét đến không phải linh kiện ô tô|Có|
+| 9 | Nhập nguyên liệu của doanh nghiệp chế xuất từ nước ngoài |Đối tượng đang xét đến không phải nguyên liệu sản xuất|Có|
+| 10 | Nhập nguyên liệu của doanh nghiệp chế xuất từ nội địa |Đối tượng đang xét đến không phải nguyên liệu sản xuất|Có|
+| 11 | Nhập nguyên liệu sản xuất xuất khẩu |Đối tượng đang xét đến không phải nguyên liệu sản xuất|Có|
+| 12 | Nhập nguyên liệu để gia công cho thương nhân nước ngoài |Đối tượng đang xét đến không phải nguyên liệu sản xuất|Có|
 | 13 | Nhập tạo tài sản cố định của doanh nghiệp chế xuất ||Không|
 | 14 | Tái nhập hàng đã tạm xuất ||Có|
-| 15 | Tạm nhập máy móc, thiết bị phục vụ thực hiện các dự án có thời hạn ||Có|
+| 15 | Tạm nhập máy móc, thiết bị phục vụ thực hiện các dự án có thời hạn |Có|
 
 
 - Đơn vị tính:
   
-![image](https://github.com/user-attachments/assets/9c97723c-b233-44fc-8887-d079c9efd13a)
-
+Filter out units of measure that do not align with the products being analyzed, as these units represent items outside the scope of the analysis./ Loại bỏ các đơn vị tính không phù hợp với đối tượng sản phẩm đang phân tích vì các đơn vị tính này thể hiện các mã hàng ngoài vùng phân tích
 
 - Lượng:
 
-Loại bỏ các đơn hàng có lượng nhập khẩu < 10
-
+Removed import orders with quantities less than 10 to exclude sample orders that do not serve commercial purposes./ Loại bỏ các đơn hàng có lượng nhập khẩu < 10 để loại bỏ các trường hợp nhập hàng mẫu không phục vụ mục đích thương mại.
 
 - Tên hàng:
 
@@ -146,20 +145,23 @@ Loại bỏ các đơn hàng có lượng nhập khẩu < 10
 = Table.TransformColumns(#"Filtered Muc dich su dung",{{"Ten hang", Text.Lower, type text}})
 ```
   
-Filter out các hàng hóa có từ khóa: ô tô, ôtô, điện thoại di động, đtdđ, camera lùi, máy tính, robot, máy ảnh, máy chụp hình, máy quay phim, xe hơi,
-xe máy,cụm camera, hành trình, máy quay, hội nghị, camera sau, phụ tùng, mã vạch, tuần tra, lùi, linh kiện, kiểm tra sản phẩm, lắp trong xe, lùi, kính hiển vi.
+Filter out các hàng hóa có từ khóa: ô tô, ôtô, điện thoại di động, đtdđ, camera lùi, máy tính, robot, máy ảnh, máy chụp hình, máy quay phim, xe hơi, xe máy,cụm camera, hành trình, máy quay, hội nghị, camera sau, phụ tùng, mã vạch, tuần tra, lùi, linh kiện, kiểm tra sản phẩm, lắp trong xe, lùi, kính hiển vi.
 
 ![image](https://github.com/user-attachments/assets/5e7b00e2-c158-4905-ab79-9aa603cecc23)
 
+- Tạo cột đơn giá trung bình = Tri gia (USD)/ Luong (Trị giá/Lượng) 
 
-- Tạo cột đơn giá trung bình để loại bỏ các đơn hàng có đơn giá quá thấp => dễ nhầm lẫn sang các loại linh kiện:
+Created a column for average unit price.
+Filtered out orders with an average unit price lower than $2, as these may be mistaken for components or sample items, which are typically priced below $2.
 
-Loại bỏ các đơn giá trung bình < $2
+Tạo cột đơn giá trung bình để loại bỏ các đơn hàng có đơn giá thấp hơn 2 vì dễ nhầm lẫn sang các loại linh kiện cũng như giá cho các hàng mẫu/thường là dưới $2
+
+Dataset sau khi thực hiện lọc các giá trị không phù hợp so với dataset ban đầu:
 
 
 Dataset ban đầu:
 
-|Số dòng| Tổng số lượng |
+|Số dòng| Tổng số lượng | |Số dòng| Tổng số lượng |
 |---|---|
 |16,088| 59,105,770|
 
