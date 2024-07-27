@@ -195,7 +195,19 @@ Trong đó, Trung Quốc là quốc gia xuất khẩu lớn nhất vào Việt N
 |Trị giá (USD)| 44,545,376|89.29%|
 
 
-The market is dominated by Chinese giants Dahua and Hikvision who hold a staggering 90 per cent market share. The rest are mainly small Chinese names.
+There are more than 50 camera brands imported into Vietnam. Among them, the primary market is dominated by Chinese brands, with Dahua and Hikvision being the two largest exporters to Vietnam (accounting for 86.37% in quantity and 75% in value), along with their subsidiary brands. Additionally, there are other smaller Chinese brands.
+
+
+Hikvision camera brands: Hikvision, Hilook, Ezviz
+
+Dahua camera brands: Dahua, Imou, Kbone, KBvision
+
+
+Additionally, there are cameras from the following brands:
+
+South Korea: Hanwha Techwin: Hanwha, Wisenet
+
+Vietnamese cameras manufactured by Chinese companies: Huviron, Hiviz, FPT, Vantech
 
 Có hơn 50 hãng camera nhập khẩu vào Việt Nam. Trong đó, với 1 thị trường chủ yếu từ các hãng Trung Quốc, hai hãng camera xuất khẩu lớn nhất vào Việt Nam là Dahua và Hikvision (chiếm 86.37% về lượng và 75% về giá trị) và các hãng con của hai hãng này. Ngoài ra là các hãng nhỏ khác của Trung Quốc
 
