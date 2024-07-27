@@ -191,8 +191,8 @@ Trong đó, Trung Quốc là quốc gia xuất khẩu lớn nhất vào Việt N
 |Số dòng| Tổng số lượng |% trên tổng dataset|
 |---|---|---|
 |Số dòng có thể nhận diện được tên hãng camera| 4,013 |87.99%|
-|Số lượng| 1,898,525|98.44%|
-|Trị giá (USD)| 43,953,849|87.33%|
+|Số lượng| 1,901,590|98.89%|
+|Trị giá (USD)| 44,545,376|89.29%|
 
 
 The market is dominated by Chinese giants Dahua and Hikvision who hold a staggering 90 per cent market share. The rest are mainly small Chinese names.
@@ -202,20 +202,24 @@ Có hơn 50 hãng camera nhập khẩu vào Việt Nam. Trong đó, với 1 th�
 Các hãng camera của Hivision: Hikvision, Hilook, Ezviz, 
 Các hãng camera của Dahua: Dahua, Imou, Kbone, KBvision
 
+Ngoài ra còn có các camera của các hãng từ:
+Hàn Quốc: Hanwha Techwin: Hanwha, Wisenet
+
 Camera Việt Nam gia công bới NSX TQ: Huviron, Hiviz, FPT, Vantech
 
 ### 2.3 Phân bổ số lượng và giá trị camera theo nhà nhập khẩu
 
-Các nhà nhập khẩu thường có xu hướng chỉ nhập từ 2-3 hãng camera:
-Top 5 nhà nhập khẩu tại Việt Nam (Chiếm 60% lượng camera nhập khẩu vào VN):
+Các nhà nhập khẩu có xu hướng chỉ nhập từ 1 hãng camera và 2-3 hiệu camera của hãng đó, tương ứng là 2-3 công ty xuất khẩu.
+Top 5 nhà nhập khẩu tại Việt Nam (Chiếm 60% lượng camera nhập khẩu vào VN và 42% về giá trị):
 
 |Nhà nhập khẩu|Hãng camera|% lượng nhập khẩu|
 |---|---|---|
-|CôNG TY Cổ PHầN CôNG NGHệ DSS VIệT NAM|Dahua, Imou|17.83%|
-|Công Ty Cổ Phần Nhà An Toàn|Hikvision, Ezviz|15.94%|
-|Cty TNHH Thương Mại Kỹ Thuật Lê Hoàng|Hikvision, Ezviz|10.01%|
-|CôNG TY CP CôNG NGHệ DSS MIềN NAM|Dahua, Imou|9.47%|
-|CôNG TY TNHH Kỹ THUậT KB SECURITY|KBvision, Kbone|7.36^|
+|CôNG TY Cổ PHầN CôNG NGHệ DSS VIệT NAM|Dahua (Dahua, Imou)|17.83%|
+|Công Ty Cổ Phần Nhà An Toàn|Hikvision (Hikvision, Ezviz)|15.94%|
+|Cty TNHH Thương Mại Kỹ Thuật Lê Hoàng|Hikvision (Hikvision, Ezviz)|10.01%|
+|CôNG TY CP CôNG NGHệ DSS MIềN NAM|Dahua (Dahua, Imou)|9.47%|
+|CôNG TY TNHH Kỹ THUậT KB SECURITY|Dahua (KBvision, Kbone)|7.36%|
 
 ### 2.4 Phân bổ số lượng và giá trị theo phân khúc giá
+
 
