@@ -145,7 +145,7 @@ Removed import orders with quantities less than 10 to exclude sample orders that
 = Table.TransformColumns(#"Filtered Muc dich su dung",{{"Ten hang", Text.Lower, type text}})
 ```
   
-Filter out các hàng hóa có từ khóa: ô tô, ôtô, điện thoại di động, đtdđ, camera lùi, máy tính, robot, máy ảnh, máy chụp hình, máy quay phim, xe hơi, xe máy,cụm camera, hành trình, máy quay, hội nghị, camera sau, phụ tùng, mã vạch, tuần tra, lùi, linh kiện, kiểm tra sản phẩm, lắp trong xe, lùi, kính hiển vi.
+Filter out các hàng hóa có từ khóa: ô tô, ôtô, điện thoại di động, đtdđ, camera lùi, máy tính, robot, máy ảnh, máy chụp hình, máy quay phim, xe hơi, xe máy,cụm camera, hành trình, máy quay, hội nghị, camera sau, phụ tùng, mã vạch, tuần tra, lùi, linh kiện, kiểm tra sản phẩm, lắp trong xe, lùi, kính hiển vi, camera trước
 
 ![image](https://github.com/user-attachments/assets/5e7b00e2-c158-4905-ab79-9aa603cecc23)
 
@@ -163,7 +163,7 @@ Dataset ban đầu:
 ||Số dòng| Tổng số lượng |
 |---|---|---|
 |Dataset ban đầu|16,088| 59,105,770|
-|Dataset sau khi lọc| 4,561 | 1,929,600|
+|Dataset sau khi lọc| 4,561 | 1,928,552|
 |%| 28.35%|3.26%|
 
 ## 2. Data analysis
@@ -191,7 +191,18 @@ Trong đó, Trung Quốc là quốc gia xuất khẩu lớn nhất vào Việt N
 |Số dòng| Tổng số lượng |% trên tổng dataset|
 |---|---|---|
 |Số dòng có thể nhận diện được tên hãng camera| 4,013 |87.99%|
-|Số lượng| 1,891,024|98.00%|
+|Số lượng| 1,898,525|98.44%|
+|Trị giá (USD)| 43,953,849|87.33%|
 
-The market, valued at roughly US$175 million in 2023, is dominated by Chinese giants Dahua and Hikvision who hold a staggering 90 per cent market share. the two largest Chinese brands are Dahua, HikVision, and their subsidiaries, accounting for nearly 90% of the market share; The rest are mainly small Chinese names.
+
+The market is dominated by Chinese giants Dahua and Hikvision who hold a staggering 90 per cent market share. The rest are mainly small Chinese names.
+
+Có hơn 50 hãng camera nhập khẩu vào Việt Nam. Trong đó, với 1 thị trường chủ yếu từ các hãng Trung Quốc, hai hãng camera xuất khẩu lớn nhất vào Việt Nam là Dahua và Hikvision (chiếm 86.37% về lượng và 75% về giá trị) và các hãng con của hai hãng này. Ngoài ra là các hãng nhỏ khác của Trung Quốc
+
+Các hãng camera của Hivision: Hikvision, Hilook, Ezviz, 
+Các hãng camera của Dahua: Dahua, Imou, Kbone, KBvision
+
+Camera Việt Nam gia công bới NSX TQ: Huviron, Hiviz, FPT, Vantech
+
+### 2.2 Phân bổ số lượng và giá trị theo phân khúc giá
 
