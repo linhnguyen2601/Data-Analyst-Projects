@@ -163,8 +163,8 @@ Dataset ban đầu:
 ||Số dòng| Tổng số lượng |
 |---|---|---|
 |Dataset ban đầu|16,088| 59,105,770|
-|Dataset sau khi lọc| 4,561 | 1,928,552|
-|%| 28.35%|3.26%|
+|Dataset sau khi lọc| 4,561 | 1,923,015|
+|%| 28.35%|3.25%|
 
 ## 2. Data analysis
 
@@ -204,5 +204,18 @@ Các hãng camera của Dahua: Dahua, Imou, Kbone, KBvision
 
 Camera Việt Nam gia công bới NSX TQ: Huviron, Hiviz, FPT, Vantech
 
-### 2.2 Phân bổ số lượng và giá trị theo phân khúc giá
+### 2.3 Phân bổ số lượng và giá trị camera theo nhà nhập khẩu
+
+Các nhà nhập khẩu thường có xu hướng chỉ nhập từ 2-3 hãng camera:
+Top 5 nhà nhập khẩu tại Việt Nam (Chiếm 60% lượng camera nhập khẩu vào VN):
+
+|Nhà nhập khẩu|Hãng camera|% lượng nhập khẩu|
+|---|---|---|
+|CôNG TY Cổ PHầN CôNG NGHệ DSS VIệT NAM|Dahua, Imou|17.83%|
+|Công Ty Cổ Phần Nhà An Toàn|Hikvision, Ezviz|15.94%|
+|Cty TNHH Thương Mại Kỹ Thuật Lê Hoàng|Hikvision, Ezviz|10.01%|
+|CôNG TY CP CôNG NGHệ DSS MIềN NAM|Dahua, Imou|9.47%|
+|CôNG TY TNHH Kỹ THUậT KB SECURITY|KBvision, Kbone|7.36^|
+
+### 2.4 Phân bổ số lượng và giá trị theo phân khúc giá
 
