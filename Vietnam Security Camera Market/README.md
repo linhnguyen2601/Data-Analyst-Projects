@@ -158,18 +158,11 @@ Tạo cột đơn giá trung bình để loại bỏ các đơn hàng có đơn 
 
 Dataset sau khi thực hiện lọc các giá trị không phù hợp so với dataset ban đầu:
 
-
 Dataset ban đầu:
 
-|Số dòng| Tổng số lượng | |Số dòng| Tổng số lượng |
-|---|---|
-|16,088| 59,105,770|
-
-Dataset sau khi thực hiện lọc các giá trị không phù hợp:
-
-|Số dòng| Tổng số lượng |
-|---|---|
-| 4,561 | 1,929,600|
+|Số dòng| Tổng số lượng | |Số dòng| Tổng số lượng || % số dòng| % số lượng
+|---|---||---|---||---|---|
+|16,088| 59,105,770|| 4,561 | 1,929,600|| 28.35%|3.26%
 
 ## 2. Data analysis
 
