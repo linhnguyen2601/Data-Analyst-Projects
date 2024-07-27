@@ -1,8 +1,8 @@
 # Vietnam Surveilance and Security Market 2020| Excel & Power Query & Pivot Table
 
-_The data has been processed to avoid disclosing precise information from the company's actual data._
+Note: The data has been processed to avoid disclosing precise information from the company's actual data.
 
-_Số liệu đã được xử lý để tránh đưa thông tin chính xác từ dữ liệu của công ty lên_
+_Lưu ý: số liệu đã được xử lý để tránh đưa thông tin chính xác từ dữ liệu của công ty lên_
 
 ![image](https://github.com/user-attachments/assets/cd72fc0c-dd95-40a6-9774-3cb15272f146)
 
@@ -41,11 +41,9 @@ Dataset bao gồm các trường thông tin: ngày, công ty nhập khẩu, mã 
 
 The dataset shows import data of security market in the first half of 2020.
 
-Dataset này bao gồm số liệu về thị trường camera 
+Dataset này bao gồm số liệu về thị trường camera nhập khẩu của Việt Nam trong 6 tháng đầu năm 2020.
 
-Tổng số dòng: 
-
-Các cột:
+Columns/Các cột:
 
 |STT | Tên cột | Miêu tả|
 |---|---|---|
@@ -65,6 +63,13 @@ Các cột:
 
 ### 2.1 Check null, duplicate
 
+There are no null values.
+
+There are 497 duplicate rows, accounting for approximately 3% of the dataset.
+
+Không có giá trị null. 
+
+Có 497 dòng bị duplicate, chiếm khoảng 3% dataset.
 
 ### 2.2 Filtering
 
@@ -79,8 +84,13 @@ _Thực hiện lọc trên các cột:_
 
 - Công ty nhập khẩu:
 
-Loại bỏ cá nhân và các văn phòng đại diện
+Filter out individuals and organizations without tax codes, as well as representative offices, to focus on manufacturing, trading, and import companies.
 
+Loại bỏ các cá nhân- tổ chức không có mã số thuế và các văn phòng đại diện với mục đích là tập trung vào các công ty sản xuất, thương mại và nhập khẩu
+
+```
+ Table.SelectRows(#"Removed Duplicates", each ([Cong ty Nhap khau] <> "Tổng Lãnh Sự Quán xxx" and [Cong ty Nhap khau] <> "VPĐD D-Link xxx" and [Cong ty Nhap khau] <> "Văn phòng đại diện xxx" and [Cong ty Nhap khau] <> "Văn phòng đại diện xxxx" and [Cong ty Nhap khau] <> "Văn phòng đại diện xxx"))
+```
 
 - Mã hàng: Bỏ chọn các mã 85258031 & 85258051
 
