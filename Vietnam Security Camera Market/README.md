@@ -1,4 +1,8 @@
-# Vietnam Surveilance and Security Market 2020 Analysis | Excel & Power Query & Pivot Table
+# Vietnam Surveilance and Security Market 2020| Excel & Power Query & Pivot Table
+
+_The data has been processed to avoid disclosing precise information from the company's actual data._
+
+_Số liệu đã được xử lý để tránh đưa thông tin chính xác từ dữ liệu của công ty lên_
 
 ![image](https://github.com/user-attachments/assets/cd72fc0c-dd95-40a6-9774-3cb15272f146)
 
@@ -18,48 +22,44 @@ Import Trends of Dealers: Analyze the import trends of camera dealers.
 Dataset Fields:
 The dataset includes the following fields: date, importing company, item code, item name, quantity, unit of measure, value, purpose of use, and exporting company.
 
-_Mục tiêu của việc phân tích dataset này là phân tích dữ liệu nhập khẩu để cung cấp thông tin chi tiết hỗ trợ phòng kinh doanh trong việc nghiên cứu thị trường camera an ninh, camera giám sát tại Việt Nam cũng như xây dựng chiến lược giá cho dòng sản phẩm đang chuẩn bị tung ra thị trường của công ty. 
+Mục tiêu của việc phân tích dataset này là phân tích dữ liệu thị trường để cung cấp thông tin chi tiết hỗ trợ phòng kinh doanh trong việc nghiên cứu thị trường camera an ninh, camera giám sát tại Việt Nam cũng như xây dựng chiến lược giá cho dòng sản phẩm đang chuẩn bị tung ra thị trường của công ty. 
 
 Đầu ra báo cáo cần làm rõ:
 
-- Tổng số lượng camera nhập khẩu chính ngạch (qua hải quan) tại Việt Nam trong 6 tháng đầu năm 2020 là bao nhiêu?
+- Tổng số lượng camera nhập khẩu vào Việt Nam trong 6 tháng đầu năm 2020 là bao nhiêu?
 - Xác định xu hướng nhập khẩu theo thời gian.
-- Những hãng nào đang xuất khẩu vào Việt Nam với số lượng lớn nhất, là bao nhiêu, giá trị như thế nào?
+- Những hãng nào đang xuất khẩu vào Việt Nam với số lượng là bao nhiêu, giá trị như thế nào?
 - Nguồn gốc xuất xứ những hãng đó từ nước nào?
 - Những hãng đó đang xuất khẩu vào Việt Nam thông qua công ty xuất khẩu nào (Chính hãng phân phối tại Việt Nam hay thông qua đại lý?)
 - Các đại lý nhập khẩu camera có xu hướng nhập khẩu như thế nào?
+- Camera nhập khẩu vào Việt Nam chủ yếu ở phân khúc giá nào? Đặc điểm của những phân khúc giá này là gì?
+- Loại camera nào đang được nhập khẩu nhiều nhất vào Việt Nam?
 
 Dataset bao gồm các trường thông tin: ngày, công ty nhập khẩu, mã hàng, tên hàng, số lượng, đơn vị tính, giá trị, mục đích sử dụng, và công ty xuất khẩu.
-_
+
 ### 1.2 Dataset introduction
 
 The dataset shows import data of security market in the first half of 2020.
+
+Dataset này bao gồm số liệu về thị trường camera 
 
 Tổng số dòng: 
 
 Các cột:
 
-Ngày
-Mã Cty NK
-Mã hang 	
-Tên hang
-DVT
-Lượng
-Trị giá
-Đơn giá
-Thị trường xuất khẩu
-Cửa khẩu
-DKGH (Điều kiện giao hàng)
-Mã PTTT
-Mục đích sử dụng
-Tên cty xuất khẩu
-
-Các bước làm:
-Check null, duplicates
-Loại các giá trị để ra được dataset chỉ bao gồm các sản phẩm security camera bằng việc lọc theo tên hàng, mã hàng hóa nhập khẩu, mục đích sản phẩm.
-Đơn vị tính 
-Lượng?
-Công ty nhập khẩu: bỏ cá nhân và VP đại diện.
+|STT | Tên cột | Miêu tả|
+|---|---|---|
+|1|Ngay|Ngày nhập khẩu|
+|2|Ma Cty NX|Mã công ty nhập khẩu|
+|3|Cong ty NK|Công ty nhập khẩu|
+|4|Ma hang|Mã hàng|
+|5|Ten hang|Tên hàng|
+|6|ĐVT|Đơn vị tính|
+|7|Luong|Lượng|
+|8|Tri gia (USD)|Trị giá (USD)|
+|9|Thi truong xuat khau|Thị trường xuất khẩu|
+|10|Muc dich su dung| Mục đích sử dụng |
+|11|Ten cong ty XK|Tên công ty xuất khẩu|
 
 ## 2. Data cleaning
 
@@ -72,9 +72,9 @@ Apply Filters on the Following Columns:
 
 _Thực hiện lọc trên các cột:_
 
-| Ngay | Ma Cty NX | Cong ty NK | Ma hang| Ten hang| DVT | Luong | Tri gia(USD)| Thi truong xuat khau| Cua khau| DKGD | Ma PTTT | Muc dich su dung| Ten cong ty XK|
-| --- | --- | --- | --- | --- |--- |  --- | --- | --- |   --- |   --- |   --- | --- | --- | 
-| | | x| x| x| x| x | |||||x||
+| Ngay | Ma Cty NX | Cong ty NK | Ma hang| Ten hang| DVT | Luong | Tri gia(USD)| Thi truong xuat khau| Muc dich su dung| Ten cong ty XK|
+| --- | --- | --- | --- | --- |--- |  --- | --- | --- |   --- |   --- |  
+| | | x| x| x| x| x | ||x||
 
 
 - Công ty nhập khẩu:
