@@ -191,16 +191,16 @@ Trong đó, Trung Quốc là quốc gia xuất khẩu lớn nhất vào Việt N
 |Số dòng| Tổng số lượng |% trên tổng dataset|
 |---|---|---|
 |Số dòng có thể nhận diện được tên hãng camera| 4,013 |87.99%|
-|Số lượng| 1,902,234|99.00%|
-|Trị giá (USD)| 44,695,803|90.30%|
+|Số lượng| 1,902,xxx|99.00%|
+|Trị giá (USD)| 44,695,xxx|90.30%|
 
 
 There are nearly 60 camera brands imported into Vietnam. Among them, the primary market is dominated by Chinese brands, with Dahua and Hikvision being the two largest exporters to Vietnam (accounting for 86.37% in quantity and 75% in value), along with their subsidiary brands. Additionally, there are other smaller Chinese brands.
 
 
-Hikvision camera brands: Hikvision, Hilook, Ezviz
+- Hikvision camera brands: Hikvision, Hilook, Ezviz
 
-Dahua camera brands: Dahua, Imou, Kbone, KBvision
+- Dahua camera brands: Dahua, Imou, Kbone, KBvision
 
 
 Additionally, there are cameras from the following brands:
@@ -252,4 +252,50 @@ Theo thống kê có hơn 400 công ty nhập khẩu, tuy nhiên chỉ tính ri�
 
 ### 2.4 Phân bổ số lượng và giá trị theo phân khúc giá
 
+Giá camera nhập khẩu vào Việt Nam rất đa dạng, từ giá thấp nhất là $2/camera đến camera chuyên dụng giá cao nhất là $12,000/camera
 
+Phân tích giá trung bình trên hai hãng camera Hikvision và Dahua:
+
+|Hãng camera|Hiệu camera|Tỷ lệ phân bổ|Giá Trung bình|
+|---|---|---|---|
+|Dahua|Dahua|24.xx%|108.xx|
+|Hikvision|Hivision|27.xx%|70.xx|
+|Dahua|KBvision|11.xx%|36.xx|
+|Hikvision|Ezviz|20.xx%|30.xx|
+|Dahua|KBone|5.xx%|22.xx|
+|Dahua|Imou|9.xx%|22.xx|
+|Hikvision|Hilook||21.xx|
+
+Từ bảng giá trung bình trên ta thấy hai hãng Dahua và Hivision có phân cấp giá rõ rệt cho các hiệu camera khác nhau, từ loại cao cấp đến phân khúc phổ thông.
+
+Tuy nhiên trong khi các phân khúc giá thấp hơn của Dahua và Hikvision có sự cạnh tranh tương đối về giá (KBvision vs Ezviz, KBone vs Imou) thì giá trung bình của hai thương hiệu Dahua và Hikvision đang chênh lệch nhau tương đối lớn.
+
+Vì vậy ta check giá camera lớn nhất của hai hãng camera này thì thấy:
+
+- Các camera có giá nhập khẩu lớn nhất của Dahua bị tính thêm chi phí bản quyền phần mềm camera trong 1 số đơn hàng, trong khi các đơn hàng còn lại với mẫu camera tương tự thì không phải chịu chi phí bản quyền này. Vì vậy ta sẽ lấy giá trung bình camera của các model này mà không có chi phí bản quyền phần mềm.
+
+- Camera có giá nhập khẩu lớn nhất của Hikvision là do đơn hàng này được nhập khẩu với giá bán lẻ, không phải giá nhập khẩu như đang tính ở đây nên chúng ta cũng thực hiện điều chỉnh về giá nhập đối với đơn hàng này.
+
+Sau khi điều chỉnh giá, đơn giá TB của các thương hiệu camera như sau:
+
+|Hãng camera|Hiệu camera|Tỷ lệ phân bổ|Giá Trung bình|
+|---|---|---|---|
+|Dahua|Dahua|24.xx%|94.xx|
+|Hikvision|Hivision|27.xx%|68.xx|
+|Dahua|KBvision|11.xx%|36.xx|
+|Hikvision|Ezviz|20.xx%|30.xx|
+|Dahua|KBone|5.xx%|22.xx|
+|Dahua|Imou|9.xx%|22.xx|
+|Hikvision|Hilook||21.xx|
+
+Tuy số liệu đã hợp lý hơn nhưng cũng cần lưu ý rằng do cơ cấu nhập khẩu của các model của mỗi thương hiệu mà sẽ dẫn đến giá trung bình khác nhau. Vì vậy chúng ta sẽ đi sâu vào phân tích phân khúc giá của hai hãng camera Dahua và Hikvision:
+
+|Hiệu camera|<20|20-35|35-50|50-95|>95|
+|---|---|---|---|---|---|
+|Dahua|81%|15.7%|2.2%|0.8%|0.4%|
+|Hikvision|59.8%|23.2%|10%|4.6%|2.5%|
+|KBvision|80.3%|17.3%|0.2%|1.6%|0.3%|
+|Ezviz|79.3%|16.8%|3.7%|0.1%|0.2%|
+|KBone|71.4%|28.6%|0|0|0|
+|Imou|85.4%|14.6%|0|0|0|
+|Hilook|77.1%|19.7%|3.3%|0|0|
