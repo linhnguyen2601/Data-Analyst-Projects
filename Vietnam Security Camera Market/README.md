@@ -163,8 +163,8 @@ Dataset ban đầu:
 ||Số dòng| Tổng số lượng |
 |---|---|---|
 |Dataset ban đầu|16,088| 59,105,770|
-|Dataset sau khi lọc| 4,561 | 1,923,015|
-|%| 28.35%|3.25%|
+|Dataset sau khi lọc| 4,478 | 1,921,405|
+|%| 27.83%|3.25%|
 
 ## 2. Data analysis
 
@@ -191,11 +191,11 @@ Trong đó, Trung Quốc là quốc gia xuất khẩu lớn nhất vào Việt N
 |Số dòng| Tổng số lượng |% trên tổng dataset|
 |---|---|---|
 |Số dòng có thể nhận diện được tên hãng camera| 4,013 |87.99%|
-|Số lượng| 1,901,590|98.89%|
-|Trị giá (USD)| 44,545,376|89.29%|
+|Số lượng| 1,902,234|99.00%|
+|Trị giá (USD)| 44,695,803|90.30%|
 
 
-There are more than 50 camera brands imported into Vietnam. Among them, the primary market is dominated by Chinese brands, with Dahua and Hikvision being the two largest exporters to Vietnam (accounting for 86.37% in quantity and 75% in value), along with their subsidiary brands. Additionally, there are other smaller Chinese brands.
+There are nearly 60 camera brands imported into Vietnam. Among them, the primary market is dominated by Chinese brands, with Dahua and Hikvision being the two largest exporters to Vietnam (accounting for 86.37% in quantity and 75% in value), along with their subsidiary brands. Additionally, there are other smaller Chinese brands.
 
 
 Hikvision camera brands: Hikvision, Hilook, Ezviz
@@ -209,7 +209,9 @@ South Korea: Hanwha Techwin: Hanwha, Wisenet
 
 Vietnamese cameras manufactured by Chinese companies: Huviron, Hiviz, FPT, Vantech
 
-Có hơn 50 hãng camera nhập khẩu vào Việt Nam. Trong đó, với 1 thị trường chủ yếu từ các hãng Trung Quốc, hai hãng camera xuất khẩu lớn nhất vào Việt Nam là Dahua và Hikvision (chiếm 86.37% về lượng và 75% về giá trị) và các hãng con của hai hãng này. Ngoài ra là các hãng nhỏ khác của Trung Quốc
+#
+
+Có gần 60 hãng camera nhập khẩu vào Việt Nam. Trong đó, với 1 thị trường chủ yếu từ các hãng Trung Quốc, hai hãng camera xuất khẩu lớn nhất vào Việt Nam là Dahua và Hikvision (chiếm 86.37% về lượng và 75% về giá trị) và các hãng con của hai hãng này. Ngoài ra là các hãng nhỏ khác của Trung Quốc
 
 Các hãng camera của Hivision: Hikvision, Hilook, Ezviz, 
 Các hãng camera của Dahua: Dahua, Imou, Kbone, KBvision
@@ -219,18 +221,34 @@ Hàn Quốc: Hanwha Techwin: Hanwha, Wisenet
 
 Camera Việt Nam gia công bới NSX TQ: Huviron, Hiviz, FPT, Vantech
 
+|STT|Thương hiệu camera|Hãng camera|% lượng camera|% giá trị camera|
+|---|---|---|---|---|
+|1|Hikvision|Hikvision|23.xx%|24.xx%|
+|2|Dahua|Dahua|21.xx%|14.xx%|
+|3|Ezviz|Hivision|17.xx%|13.xx%|
+|4|KBvision|Dahua|10.xx%|6.xx%|
+|5|Imou|Dhua|8.xx%|6.xx%|
+|6|Kbone|Dahua|4.xx%|3.xx%|
+
 ### 2.3 Phân bổ số lượng và giá trị camera theo nhà nhập khẩu
 
-Các nhà nhập khẩu có xu hướng chỉ nhập từ 1 hãng camera và 2-3 hiệu camera của hãng đó, tương ứng là 2-3 công ty xuất khẩu.
-Top 5 nhà nhập khẩu tại Việt Nam (Chiếm 60% lượng camera nhập khẩu vào VN và 42% về giá trị):
+Các công ty nhập khẩu chỉ kinh doanh/phân phối các sản phẩm từ 1 hãng camera nhất định và 2-3 hiệu camera của hãng đó, tương ứng là 2-3 công ty xuất khẩu. 
 
-|Nhà nhập khẩu|Hãng camera|% lượng nhập khẩu|
-|---|---|---|
-|CôNG TY Cổ PHầN CôNG NGHệ DSS VIệT NAM|Dahua (Dahua, Imou)|17.83%|
-|Công Ty Cổ Phần Nhà An Toàn|Hikvision (Hikvision, Ezviz)|15.94%|
-|Cty TNHH Thương Mại Kỹ Thuật Lê Hoàng|Hikvision (Hikvision, Ezviz)|10.01%|
-|CôNG TY CP CôNG NGHệ DSS MIềN NAM|Dahua (Dahua, Imou)|9.47%|
-|CôNG TY TNHH Kỹ THUậT KB SECURITY|Dahua (KBvision, Kbone)|7.36%|
+Theo thống kê có hơn 400 công ty nhập khẩu, tuy nhiên chỉ tính riêng Top 10 nhà nhập khẩu tại Việt Nam 
+ đã chiếm 80% lượng camera nhập khẩu vào VN và 57% về giá trị). Và top 10 nhà NK này cũng chỉ phân phối camera của hai hãng là Dahua và Hikvision.
+
+|STT|Nhà nhập khẩu|Hãng camera|% lượng camera|% giá trị camera|
+|---|---|---|---|---|
+|1|CôNG TY Cổ PHầN CôNG NGHệ DSS VIệT NAM|Dahua (Dahua, Imou)|17.xx%|11.xx%|
+|2|Công Ty Cổ Phần Nhà An Toàn|Hikvision (Hikvision, Ezviz)|15.xx%|13.xx%|
+|3|Cty TNHH Thương Mại Kỹ Thuật Lê Hoàng|Hikvision (Hikvision, Ezviz)|10.xx%|7.xx%|
+|4|CôNG TY CP CôNG NGHệ DSS MIềN NAM|Dahua (Dahua, Imou)|9.xx%|6.xx%|
+|5|CôNG TY TNHH Kỹ THUậT KB SECURITY|Dahua (KBvision, Kbone)|7.xx%|4.xx%|
+|6|Công Ty TNHH Thương Mại Kỹ Thuật Tin Học Anh Ngọc|Hikvision (Ezviz)|6.xx%|5.xx%|
+|7|CôNG TY TNHH XUấT NHậP KHẩU ĐồNG VăN|Dahua (Dahua, Kbone, KBvision)|4.xx%|2.xx%|
+|8|CôNG TY TNHH SảN XUấT & THươNG MạI LONG HòA| Dahua (Dahua, Kbone, KBvision)|3.xx%|1.xx%|
+|9| Công Ty TNHH Đầu Tư Và Phát Triển Phương Việt| Hikvision|3.xx%|2.xx%|
+|10| CôNG TY Cổ PHầN PHáT TRIểN GIA PHáT VIệT NAM| Hikvision|1.xx%|1.xx%|
 
 ### 2.4 Phân bổ số lượng và giá trị theo phân khúc giá
 
