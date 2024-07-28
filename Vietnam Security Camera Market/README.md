@@ -252,9 +252,9 @@ Theo thống kê có hơn 400 công ty nhập khẩu, tuy nhiên chỉ tính ri�
 
 ### 2.4 Phân bổ số lượng và giá trị theo phân khúc giá
 
-Giá camera nhập khẩu vào Việt Nam rất đa dạng, từ giá thấp nhất là $2/camera đến camera chuyên dụng giá cao nhất là $12,000/camera
+Giá camera nhập khẩu vào Việt Nam rất đa dạng, từ giá thấp nhất là $2/camera đến camera chuyên dụng giá cao nhất là $12,000/camera.
 
-Phân tích giá trung bình trên hai hãng camera Hikvision và Dahua:
+#### 2.4.1 Phân tích giá trung bình trên hai hãng camera Hikvision và Dahua:
 
 |Hãng camera|Hiệu camera|Tỷ lệ phân bổ|Giá Trung bình|
 |---|---|---|---|
@@ -299,3 +299,11 @@ Tuy số liệu đã hợp lý hơn nhưng cũng cần lưu ý rằng do cơ c�
 |KBone|71.4%|28.6%|0|0|0|
 |Imou|85.4%|14.6%|0|0|0|
 |Hilook|77.1%|19.7%|3.3%|0|0|
+
+Có thể thấy trong khi Dahua và Hikvision được định vị ở phân khúc giá cao hơn và có nhiều module giá cao thì các hãng khác như Kbone và Imou, Hilook- những dòng camera giá rẻ hầu như không có camera nào có giá nhập khẩu cao hơn $35/camera.
+
+#### 2.4.2 Phân tích giá các hãng camera giá cao
+
+![image](https://github.com/user-attachments/assets/157aa9f5-ec35-4e28-b8fc-5444b734f18d)
+
+
